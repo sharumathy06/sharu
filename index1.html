@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Toolkit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">UCSC Toolkit</div>
+
+    <div class="menu">
+        <button onclick="showSection('gpa')">GPA Calculator</button>
+        <button onclick="showSection('timer')">Study Timer</button>
+
+        <label class="switch">
+            <input type="checkbox" onclick="toggleDark()">
+            <span>Dark Mode</span>
+        </label>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h3>Upcoming Events</h3>
+
+<ul>
+<li>Assignment Submission</li>
+<li>Group Meeting</li>
+<li>Exam Preparation</li>
+<li>Project Demo</li>
+</ul>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<!-- GPA CALCULATOR -->
+<div id="gpa" class="card fade">
+
+<h2>GPA Calculator</h2>
+
+<input id="credits" placeholder="Credits">
+<input id="grade" placeholder="Grade Point">
+
+<button onclick="calculateGPA()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+
+<!-- STUDY TIMER -->
+<div id="timer" class="card fade">
+
+<h2>Pomodoro Study Timer</h2>
+
+<h1 id="time">25:00</h1>
+
+<button onclick="startTimer()">Start</button>
+<button onclick="resetTimer()">Reset</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
